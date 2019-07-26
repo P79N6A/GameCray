@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.blockchain.slidevalidationlib.Captcha
+        android:id="@+id/captCha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:mode="mode_bar"
+        app:src="@mipmap/ic_cat"
+        app:blockSize="50dp"
+        app:max_fail_count="5"
+       />
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_mode"
+        android:layout_width="match_parent"
+        android:text="无滑动条模式"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:onClick="changeProgressDrawable"
+        android:layout_width="match_parent"
+        android:text="更改滑动条样式"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:onClick="changePicture"
+        android:layout_width="match_parent"
+        android:text="更换图片"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

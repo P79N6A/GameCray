@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SettingActivity"
+    android:orientation="vertical"
+    android:background="@color/color_home_bg">
+
+    <include
+        layout="@layout/comm_loyout_head"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_psw"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_head_bg">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_change_password"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:background="@mipmap/comm_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_pay_psw"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_head_bg">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_change_pay_password"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:background="@mipmap/comm_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

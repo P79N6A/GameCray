@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name"> 中華小龍虾</string>
+
+    <string name="register_title">註冊用戶</string>
+    <string name="register_set_phone">手機號碼</string>
+    <string name="register_input_phone">请输入手機號碼</string>
+    <string name="register_top">註冊用戶</string>
+    <string name="register_input_code">短信驗證碼</string>
+    <string name="register_input_code_tips">請輸入短信驗證碼</string>
+    <string name="register_send_code">獲取驗證碼</string>
+    <string name="register_resend_code">秒後再獲取</string>
+    <string name="register">註冊</string>
+    <string name="register_input_password_tips_2">請輸入登錄密碼</string>
+    <string name="register_re_input_password_tips">請確認登錄密碼</string>
+    <string name="register_success_top">註冊成功</string>
+    <string name="register_success_message">恭喜您註冊成功!</string>
+    <string name="register_input_phone_tips_2">請輸入正確的手機號碼</string>
+    <string name="register_input_phone_null">手機號碼不能為空</string>
+    <string name="register_input_code_tips_3">請輸入短信驗證碼</string>
+    <string name="register_input_code_null">短信驗證碼不能為空</string>
+    <string name="register_input_password_tips_3">請輸入6到18位的密碼</string>
+    <string name="register_password_incorrect">密碼不正確</string>
+
+    <string name="login_phone_code">中国(+86)</string>
+    <string name="login_username_tips">請輸入正確的手機號碼</string>
+    <string name="login_password_tips">請輸入6到18位的密碼</string>
+    <string name="login">登錄</string>
+    <string name="login_register">掃碼註冊</string>
+    <string name="login_forget_password">忘記密碼</string>
+    <string name="login_username">请输入手機號碼</string>
+    <string name="login_password">請輸入密碼</string>
+
+    <string name="register_user_name">請輸入用戶名</string>
+    <string name="register_user_name_null">用戶名不能為空</string>
+    <string name="register_set_user_name">設置用戶名</string>
+    <string name="register_psw">設置密碼</string>
+    <string name="register_set_new_psw">設置新密碼</string>
+    <string name="register_et_psw_new">請輸入新密碼</string>
+    <string name="register_et_psw_new_again">請再次輸入新密碼</string>
+    <string name="register_set_psw">請輸入6到18位的密碼</string>
+    <string name="register_psw_input_error1">密碼長度不正確</string>
+    <string name="register_psw_input_null">密碼不能為空</string>
+    <string name="register_check_psw">確認密碼</string>
+    <string name="register_check_new_psw">確認新密碼</string>
+    <string name="register_input_again_psw">請再次輸入密碼</string>
+    <string name="register_input_again_psw_error">兩次輸入的密碼不壹致，請重新輸入！</string>
+    <string name="register_set_pay_psw">設置支付密碼</string>
+    <string name="register_pay_psw">請輸入支付密碼(必須為6位數字)</string>
+    <string name="register_pay_psw_again">請再次輸入支付密碼</string>
+    <string name="register_pay_psw_null">支付密碼不能為空</string>
+    <string name="register_pay_psw_error1">兩次輸入的支付密碼不壹致，請重新輸入！</string>
+    <string name="register_pay_psw_error">支付密碼必須為6位</string>
+    <string name="register_check_pay_psw">确认支付密码</string>
+    <string name="register_again_pay_psw">請再次輸入支付密碼</string>
+    <string name="change_psw_successful">密碼修改成功！</string>
+    <string name="change_psw_fail">密碼修改失敗,請重試！</string>
+
+    <string name="verify_code_send_success">手機驗證碼發送成功，請註意查收！</string>
+    <string name="verify_code_send_fail">手機驗證碼發送失敗，請重試！</string>
+    <string name="server_net_error">系統異常，請重試！</string>
+    <string name="register_successful">註冊成功</string>
+    <string name="user_is_registered">此號碼已註冊！</string>
+    <string name="user_is_un_register">此號碼未註冊！</string>
+    <string name="register_wrong_verify_code">驗證碼不正確</string>
+
+    <string name="login_successful">登錄成功</string>
+    <string name="login_psw_error">用戶不存在或密碼不正確</string>
+    <string name="online_server">線上客服</string>
+    <string name="tab_my_title">個人中心</string>
+    <string name="tab_home">集市</string>
+
+    <string name="cray_values">價值：</string>
+    <string name="cray_adopt_time">領養時間：</string>
+    <string name="cray_reservation_differential">預約/即搶領養微分：</string>
+    <string name="cray_earnings">智能合約收益：</string>
+
+    <string name="tab_my_msg_phone">手機：</string>
+    <string name="tab_my_msg_wia">團隊收益</string>
+    <string name="tab_my_msg_cray_coin">蝦蝦幣</string>
+    <string name="tab_my_msg_differential">微分</string>
+    <string name="tab_my_msg_accumulated_income">累計收益</string>
+    <string name="tab_my_msg_total_assets">總資產</string>
+    <string name="tab_my_msg_recommend_income">推薦收益</string>
+    <string name="tab_my_msg_adopting_record">領養記錄</string>
+    <string name="tab_my_msg_transfer_record">轉讓記錄</string>
+    <string name="tab_my_msg_reservation_record">預約記錄</string>
+    <string name="tab_my_msg_reservation_type">預約品種:</string>
+    <string name="tab_my_msg_reservation_cost">花費蝦幣:</string>
+
+    <string name="title_setting">設置</string>
+    <string name="title_security_center">安全中心</string>
+    <string name="title_change_password">修改密碼</string>
+    <string name="title_change_pay_password">修改支付密碼</string>
+    <string name="setting_current_user">用戶名</string>
+    <string name="setting_current_account">當前賬號</string>
+    <string name="setting_certification_name">實名認證</string>
+    <string name="setting_server_center">客服中心</string>
+    <string name="setting_logout">退出賬號</string>
+
+    <string name="title_invite_friend">邀請好友</string>
+    <string name="title_invitation_code">我的邀請碼</string>
+    <string name="title_copy_invitation_code">復制邀請碼</string>
+    <string name="title_generate_qr_code">生成二維碼</string>
+    <string name="title_scanning_qr_code">掃碼立即參與全民養蝦</string>
+    <string name="title_invitation_code_copied">邀請碼已復制</string>
+    <string name="title_activity_my_team">我的團隊</string>
+    <string name="title_account_alipay">添加支付寶</string>
+    <string name="title_account_weixin">添加微信</string>
+    <string name="title_account_bank_card">添加銀行卡</string>
+    <string name="title_account_bank_card_name">銀行卡名稱</string>
+    <string name="input_account_bank_card_name">請輸入銀行卡名稱</string>
+    <string name="account_successfully_added">添加成功</string>
+    <string name="account_fail_added">添加失败</string>
+    <string name="title_account_pay_alipay">支付寶</string>
+    <string name="account_pay_alipay_repeat">支付寶賬戶已存在</string>
+    <string name="account_pay_weixin_repeat">微信賬戶已存在</string>
+    <string name="account_pay_unionpay_repeat">銀行卡賬戶已存在</string>
+    <string name="title_account_pay_weixin">微信</string>
+    <string name="title_account_pay_disabled">禁用</string>
+    <string name="title_account_pay_name">名稱</string>
+    <string name="title_account_pay_et_name">請輸入賬戶名稱</string>
+    <string name="card_account_name">賬戶名稱</string>
+    <string name="intput_account_bank_card_account_name">請輸入賬戶名稱</string>
+    <string name="title_account_bank_card_account_number">銀行卡賬號</string>
+    <string name="input_account_bank_card_account_number">請輸入銀行卡賬號</string>
+    <string name="title_account_pay">賬號</string>
+    <string name="title_account_et_pay">請輸入賬號</string>
+    <string name="title_account_receipt_qr_code">收款二維碼</string>
+    <string name="title_account_yollon">收款賬戶</string>
+    <string name="title_account_upload_qr_code">點擊上傳收款二維碼</string>
+    <string name="title_account_confirm_add">確認添加</string>
+    <string name="title_system_msg">系統消息</string>
+    <string name="title_certify_real_name">真實姓名</string>
+    <string name="title_certify_et_real_name">請輸入真實姓名</string>
+    <string name="title_certify_id_number">身份證號</string>
+    <string name="title_certify_et_id_number">請輸入身份證號</string>
+    <string name="title_certify_et_id_number_error">身份證長度不正確</string>
+    <string name="name_Authentication_success">實名認證成功</string>
+    <string name="name_Authentication_fail">用戶不存在</string>
+    <string name="title_certify_commit">提交</string>
+
+    <string name="net_data_loading_title">正在加載&#046;&#046;&#046;</string>
+    <string name="register_scan_permissions_denied">沒有權限無法掃描</string>
+
+    <string name="record_cray_adopting">領養中</string>
+    <string name="record_cray_adopted">已領養</string>
+    <string name="record_cray_appeal">取消/申訴</string>
+
+    <string name="record_cray_to_be_transferred">待轉讓</string>
+    <string name="record_cray_transfering">轉讓中</string>
+    <string name="record_cray_transfer_complete">已完成</string>
+    <string name="title_activity_reservation_record">預約記錄</string>
+
+    <string name="cray_status_reservation">預約</string>
+    <string name="cray_status_snap_up">待領養</string>
+    <string name="cray_status_in_panic">領養中</string>
+    <string name="cray_status_in_breeding">繁殖中</string>
+    <string name="cray_status_be_growing_up">成長中</string>
+
+    <string name="cray_subscribe_success">預約成功</string>
+    <string name="cray_subscribe_error_20001">小龍蝦品類不存在</string>
+    <string name="cray_subscribe_error_20002">重復預約</string>
+    <string name="cray_subscribe_error_20003">預約時間錯誤</string>
+    <string name="cray_subscribe_error_20004">積分不足</string>
+
+    <string name="cray_spike_success">搶購成功</string>
+    <string name="cray_spike_error_20001">小龍蝦品類不存在</string>
+    <string name="cray_spike_error_20011">非搶購時間</string>
+    <string name="cray_spike_error_20012">即將到搶購時間</string>
+    <string name="cray_spike_error_20013">搶購失敗</string>
+
+    <string name="dialog_reminder">提示</string>
+    <string name="cray_spike_success_msg">哇塞,好厲害,恭喜您搶到寵物了！</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="cray_number">龍蝦編號：</string>
+    <string name="cray_name">龍蝦名稱：</string>
+    <string name="cray_yield_profit">獲得收益：</string>
+    <string name="cray_transfer_time">轉讓時間：</string>
+    <string name="cray_remaining_payment_time">付款剩余時間：</string>
+    <string name="cray_remaining_confirm_time">確認剩余時間：</string>
+    <string name="cray_transfer_leave_unused">閑置</string>
+    <string name="cray_status_un_payment">未付款，請及時付款</string>
+    <string name="cray_status_paymented">已付款，待確認</string>
+    <string name="cray_status_appealing">申訴中</string>
+    <string name="cray_status_cancel">取消</string>
+    <string name="cray_status_earning">收益中</string>
+    <string name="cray_status_earning_finished">收益已結束</string>
+
+    <string name="cray_remaining_payment">付款</string>
+    <string name="buyer_payment">買家付款</string>
+    <string name="payment_consumption_differential">消耗微分：</string>
+    <string name="payment_transfer">轉讓方：</string>
+    <string name="payment_transfer_phone">轉讓方手機：</string>
+    <string name="payment_payment_amount">付款金額：</string>
+    <string name="payment_account_number_transfer">轉讓方收款賬號：</string>
+    <string name="payment_account_type">賬戶類型：</string>
+    <string name="payment_bank_branch_name">支行名稱：</string>
+    <string name="payment_account">賬號：</string>
+    <string name="payment_upload_payment_voucher">付款成功後請上傳支付憑證</string>
+    <string name="payment_goto_upload_payment_voucher">點擊上傳支付憑證</string>
+    <string name="payment_text_enter_password">支付密碼</string>
+    <string name="payment_enter_password">請輸入支付密碼</string>
+    <string name="payment_next_step">下壹步</string>
+    <string name="please_login_again">請重新登錄</string>
+
+    <string name="user_info_ran_0">普通用戶</string>
+    <string name="user_info_ran_1">推廣大使</string>
+    <string name="user_info_ran_2">服務商</string>
+    <string name="user_info_ran_3">合夥人</string>
+
+    <string name="cray_original_number">原龍蝦編號：</string>
+    <string name="cray_transfer_appeal">申訴</string>
+    <string name="cray_transfer_confirm">確認</string>
+    <string name="cray_payment_detail">訂單詳情</string>
+    <string name="cray_payment_time">付款時間：</string>
+    <string name="cray_transferor">轉讓方：</string>
+    <string name="cray_transferor_phone">轉讓方聯絡電話：</string>
+    <string name="cray_adopter">領養方：</string>
+    <string name="cray_adopter_phone">領養方聯絡電話：</string>
+    <string name="cray_status">龍蝦狀態：</string>
+    <string name="cray_income_status">收益狀態：</string>
+    <string name="cray_payment_voucher">支付憑證：</string>
+
+    <string name="cray_tansfer_order_confirm_status_0">確認成功</string>
+    <string name="cray_tansfer_order_appeal_status_0">申訴成功</string>
+    <string name="cray_tansfer_order_status_error_20021">交易單不存在</string>
+    <string name="cray_tansfer_order_status_error_20022">此交易單狀態不支持確認</string>
+    <string name="cray_tansfer_order_appeal_status_error_20022">此交易單狀態不支持支付</string>
+
+    <string name="cray_payment_success">支付成功</string>
+    <string name="cray_payment_error_20021">交易單不存在</string>
+    <string name="cray_payment_error_20022">此交易單狀態不支持支付</string>
+    <string name="cray_payment_error_20023">支付時間不正確</string>
+    <string name="cray_payment_error_20024">支付密碼不正確</string>
+
+    <string name="cray_payment_alipay">支付寶支付</string>
+    <string name="cray_payment_weixin">微信支付</string>
+    <string name="cray_payment_unionpay">銀行卡支付</string>
+    <string name="cray_payment_forbidden">刪除</string>
+    <string name="cray_payment_account_name">賬戶名稱:</string>
+    <string name="add_cray_payment_account">添加支付方式</string>
+</resources>

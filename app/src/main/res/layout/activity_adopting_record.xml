@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_main"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--不让EditText自动获取焦点-->
+    <!--android:fitsSystemWindows="true"--><!--不加这一句，状态栏就不会透明了，可以刚好隐藏我们的ToolBar-->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_head_bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/comm_back"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/tab_my_msg_adopting_record"/>
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/stl_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:paddingBottom="0dp"
+            app:stl_customTabTextLayoutId="@layout/custom_tab"
+            app:stl_defaultTabTextColor="@color/white"
+            app:stl_distributeEvenly="true"
+            app:stl_indicatorColor="@color/text_selected"
+            app:stl_indicatorCornerRadius="1dp"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="2dp"
+            app:stl_underlineColor="@color/transparent"
+            app:stl_indicatorWithoutPadding="true"/>
+        <!--stl_indicatorWithoutPadding让指示器变得很细，只wrap文字-->
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v4.view.ViewPager>
+
+    <!--千万不能以include的形式引入ViewPager，否则向上隐藏的时候会有一条白色布局横在ViewPager上面-->
+    <!--<include layout="@layout/content_main" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#171A23</color>
+    <color name="colorPrimaryDark">#171A23</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black">#ff000000</color>
+    <color name="c_black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="c_1">#909090</color>
+    <color name="text_selected">#46B39D</color>
+    <color name="dark_gray">#aaa</color>
+
+    <color name="line_split">#FF747F89</color>
+    <color name="color_D5D5D5">#D5D5D5</color>
+    <color name="color_46B39D">#46B39D</color>
+    <color name="color_home_bg">#0D1015</color>
+    <color name="color_item_bg">#3B3E46</color>
+    <color name="color_tab_gb">#171A23</color>
+    <color name="color_head_bg">#171A23</color>
+    <color name="color_my_msg">#171A23</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="color_swl">#4caf50</color>
+    <color name="color_account_alipay">#6592EB</color>
+    <color name="color_account_weixin">#50B444</color>
+    <color name="color_cray_time_values">#FF6666</color>
+</resources>

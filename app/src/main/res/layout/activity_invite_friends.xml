@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_home_bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.InviteFriendsActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/comm_loyout_head"/>
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_below="@id/include"
+        android:layout_width="match_parent"
+        android:background="@color/color_head_bg"
+        android:layout_height="160dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:text="@string/title_invitation_code"/>
+
+        <TextView
+            android:id="@+id/tv_invitation_code"
+            android:layout_below="@id/text"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:textColor="@color/text_selected"
+            android:text="GXFC"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/iv_copy_invitation_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="3dp"
+        android:text="@string/title_copy_invitation_code"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_invite_code_bg"/>
+
+    <Button
+        android:id="@+id/iv_generate_qrCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="3dp"
+        android:text="@string/title_generate_qr_code"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_generate_qr_code_bg"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_qrCode"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_scanning_qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

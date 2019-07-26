@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_content"
+    android:background="@color/color_home_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/comm_loyout_head"/>
+    <include
+        layout="@layout/account_alipay"/>
+    <include
+        layout="@layout/account_weixin"/>
+    <include
+        layout="@layout/account_unionpay"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="为了确保能一次性通过审核，请按如下要求上传："
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/tv_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/add_cray_payment_account"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_comm_commit_bg"/>
+</LinearLayout>

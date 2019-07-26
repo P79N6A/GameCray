@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_home_bg"
+    tools:context=".ui.activity.CertificationAccountActivity">
+
+    <include
+        layout="@layout/comm_loyout_head"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_head_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/title_certify_real_name"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_certify_et_real_name"
+            android:textSize="12sp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_head_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/title_certify_id_number"/>
+
+        <EditText
+            android:id="@+id/et_id_number"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_certify_et_id_number"
+            android:textSize="12sp"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:maxEms="20"
+            android:background="@null"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:padding="14dp"
+        android:background="@drawable/background_comm_commit_bg"
+        android:text="@string/title_certify_commit"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

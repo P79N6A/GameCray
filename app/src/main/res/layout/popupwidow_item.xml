@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_content"
+    android:background="@color/color_item_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/title_account_bank_card"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_dark"/>
+    <TextView
+        android:id="@+id/tv_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/title_account_alipay"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_popup_account_alipay_bg"/>
+    <TextView
+        android:id="@+id/tv_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/title_account_weixin"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_popup_account_wexin_bg"/>
+</LinearLayout>

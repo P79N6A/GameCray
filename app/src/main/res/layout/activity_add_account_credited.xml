@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_home_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/comm_loyout_head"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_alipay_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_head_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/title_account_pay_name"/>
+
+        <EditText
+            android:id="@+id/et_weixin_alipay_username"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_account_pay_et_name"
+            android:textSize="12sp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_head_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/title_account_pay"/>
+
+        <EditText
+            android:id="@+id/et_weixin_alipay_account"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_account_et_pay"
+            android:textSize="12sp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/color_head_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/title_account_receipt_qr_code"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_select"
+           android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layerType="software"
+            android:background="@drawable/background_upload_qr_code">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_account_upload_qr_code"
+                android:textSize="12sp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/bar"
+            android:visibility="gone"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="10dp"
+            android:max="100" />
+        <TextView
+            android:id="@+id/tv_start_upload"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="开始上传"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@color/color_head_bg"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pay_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_head_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/title_account_bank_card_name"/>
+
+            <EditText
+                android:id="@+id/et_bank_name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_account_bank_card_name"
+                android:textSize="12sp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_head_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/card_account_name"/>
+
+            <EditText
+                android:id="@+id/et_bank_account_name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/intput_account_bank_card_account_name"
+                android:textSize="12sp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_head_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/title_account_bank_card_account_number"/>
+
+            <EditText
+                android:id="@+id/et_bank_number"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_account_bank_card_account_number"
+                android:textSize="12sp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:padding="14dp"
+        android:background="@drawable/background_comm_commit_bg"
+        android:text="@string/title_account_confirm_add"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.blockchain.cray"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../game_cray.jks")
+            storePassword '123456'
+            keyAlias 'cray'
+            keyPassword '123456'
+        }
+        debug {
+            storeFile file("../game_cray.jks")
+            storePassword '123456'
+            keyAlias 'cray'
+            keyPassword '123456'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okio:okio:1.14.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation project(path: ':zxinglib')
+    implementation project(path: ':slidevalidationlib')
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+    implementation 'com.alibaba:fastjson:1.2.55'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.github.bumptech.glide:annotations:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    // tab切换
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    // 列表滚动动画，如果要在lib的ViewHolder里也实现动画，那么这个语句要移动到lib的gradle里
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.6'
+
+    //osslib
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //本地照片库
+    implementation 'com.library.tangxiaolv:telegramgallery:1.0.3'
+    //material dialog
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.4'
+    implementation project(path: ':ossuploadlib')
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+}
